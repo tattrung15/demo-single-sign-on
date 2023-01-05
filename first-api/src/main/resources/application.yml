@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+spring:
+  main:
+    allow-circular-references: true
+
+keycloak:
+  bearer-only: true
+  realm: demo-single-sign-on
+  resource: first-api
+  auth-server-url: http://localhost:8080
+  credentials:
+    secret: Wwx3tOfKW9CWxXg5legS6IvQC8hMshZ9
